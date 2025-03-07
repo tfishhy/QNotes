@@ -1,0 +1,87 @@
+body{
+    background: linear-gradient(-45deg, #27296d, #5e63b6, #a393eb, #f5c7f7);
+	background-size: 100% 200%;
+	height: 100vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/*
+* Some pallette i found online for the main theme
+* #27296d, #5e63b6, #a393eb, #f5c7f7
+*/
+
+.topbar {
+    width: 40%;
+    height: 6vh;
+    /* 100% of the viewport height */
+    text-align: left;
+    background-color: #27296d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9fa3e2;
+    box-shadow: #9fa3e2 20px 16px;
+}
+
+.innerbox {
+    width: 40%;
+    height: 40vh;
+    /* 100% of the viewport height */
+    background-color: #5e63b6;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9fa3e2;
+    box-shadow: #9fa3e2 20px 16px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-color: #e4e4eb;
+    border-color: #e4e4eb;
+    font-size: 16px;
+  }
+
+  label {
+    color: white;
+    font-size: 18px;
+  }
+
+  a {
+    font-style: italic;
+    color: rgb(13, 1, 184);
+  }
+
+  input[type=button] {
+    left:  50%;
+    width: 40%;
+    padding: 10px 18px;
+    margin: 0px 30%;
+    border-radius: 16px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #e4e4eb;
+    border-color: #e4e4eb;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  input[type=button]:hover{
+    background-color: darkgray;
+  }

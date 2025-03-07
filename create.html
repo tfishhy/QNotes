@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QNotes - Create Account</title>
+    <link id="style" rel="stylesheet" href="dark.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <div class="topbar">
+
+        <h1> Create an account </h1>
+
+    </div>
+
+    <div class=innerbox>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"><br><br>
+
+
+        <label for="password">Password <span id="requirements">(must be at least 5 characters long, and have at least 1 uppercase letter and special character ( _ , - , * , # and @ are accepted))</span></label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="confirmpassword">Confirm password</label>
+        <input type="password" id="confirmpassword" name="confirmpassword"><br><br>
+
+        <button id="account" onclick="create()" >Create</button>
+
+        <p> Have an account? Login <a href="login.html">here</a> </p>
+
+    </div>
+
+</body>

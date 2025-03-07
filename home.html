@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> QNotes - Home </title>
+  <script src="script.js"></script>
+  <link id="style" rel="stylesheet" type="text/css" href="dark.css" title="style">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+
+</head>
+
+<body>
+
+    <header>
+        <a href="home.html"><img id="logo" src="QNotes-light.png" alt="QNotes"></a>
+        <div class="container">
+            <div>
+                <a href="login.html"><button id="headerbutton">Login</button></a>
+            </div>
+
+
+            <div>
+                <div class="dropdown" id="dropdown">
+                    <img class="dropbtn" src="eevee.png">
+                    <div class="dropdown-content">
+                        <a onclick="siteAccess(2)">Settings</a>
+                        <a onclick="logout()">Logout</a>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+    </header>
+
+    <div class="Center">
+    <p id="title">Welcome to QNotes</p>
+
+    <br><br>
+
+    <div class="Mainbuttons"> 
+
+            <button onclick="siteAccess(1)" type="button">Notes</button>
+            <br>
+            <button onclick="siteAccess(2)" type="button">Settings</button>
+            <br>
+            <button onclick="siteAccess(3)" type="button">About Us</button>
+
+        </div>
+    </div>
+    
+</body>
+
+</html>

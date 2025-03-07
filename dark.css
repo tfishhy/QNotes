@@ -1,0 +1,418 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, 'Segoe UI', sans-serif;
+    background-image: url("always-grey.png");
+    background-color: #101010;
+}
+
+#logo {
+    width: 10vh;
+    object-fit: contain;
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+
+#title {
+    color: #F8F9FA;
+    text-align: center;
+    font-size: 70px;
+    margin: 0;
+    padding-top: 50px;
+}
+
+#notename {
+    color: #F8F9FA;
+    font-size: 70px;
+    margin: 0;
+
+}
+
+header {
+    background-color: rgb(12, 12, 12);
+    height: 16vh;
+}
+
+.Center {
+    width: 50%;
+    margin: auto;
+    height: 100%;
+}
+
+.Mainbuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-family: inherit;
+    height: 8vh;
+    border: 2px solid #0c0c0c;
+    background-color: #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #F8F9FA;;
+    font-size: 30px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s;
+    width: 40%;
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+  
+  
+  button:hover {
+    color: black;
+    background-color: #F8F9FA;
+    box-shadow: white 0 0px 15px;
+  }
+
+
+@keyframes sliding {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(60%);
+    }
+}
+.preview {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #F8F9FA;
+    height: 24vh;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    visibility: hidden;
+}
+
+.preview-slides{
+    width: 15%;
+    display: flex;
+    animation: 10s sliding infinite linear;
+    visibility: hidden;
+
+}
+.preview-slides img{
+    height: 100%;
+    visibility: hidden;
+
+}
+
+.topbar {
+    width: 40%;
+    height: 6vh;
+    /* 100% of the viewport height */
+    text-align: left;
+    background-color: #151618;;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #343A40;
+}
+
+.innerbox {
+    width: 40%;
+    height: 40vh;
+    /* 100% of the viewport height */
+    background-color: #343A40;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #495057;
+    color: #F8F9FA;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-color: #e4e4eb;
+    border-color: #e4e4eb;
+    font-size: 16px;
+  }
+
+p{
+    font-size: 20px;
+}
+
+label{
+    color:#F8F9FA;
+}
+
+a{
+    color:#016fb9;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#account{
+    width: 20%;
+    height: 4vh;
+    font-size: 20px;
+}
+
+.container {
+    position: relative;
+    float: right;
+    height: 8vh;
+    width: 12vh;
+    margin-top: 3vh;
+    margin-right: 3vh;
+  }
+
+#dropdown{
+    position: absolute;
+    visibility: hidden;
+}
+
+#headerbutton{
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.dropdown {
+    /* positon in the top right corner */
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.dropbtn {
+    background-color: #1A1A1A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 10vh;
+    margin-bottom: 1.4vh;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #333;
+    border-radius: 16px;
+    min-width: 100%;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    box-shadow: white 0 px 15px;
+    color: black;
+    cursor: pointer;
+    box-shadow: white 0 0px 15px;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+    box-shadow: white 0 0px 15px;
+}
+
+.contentbox{
+    background-color: #222121;
+    width: 50%;
+    margin: auto;
+    height: 84vh;
+}
+
+.content{
+    margin-left: 5%;
+    margin-right: 5%;
+    color: black;
+    font-weight: normal;
+}
+
+table {
+    width: inherit;
+    text-align: left;
+    margin-left: 4%;
+}
+
+.changepass{
+    width: 60%;
+    margin-right: 140px;
+}
+
+#change {
+    margin-left: 5%;
+    width: 10vh;
+    height: 5vh;
+    font-size: 20px;
+}
+
+#about{
+    color: white;
+    margin-left: 2vh;
+}
+/*
+Note app css
+*/
+
+.sidebar > h2{
+    color: white;
+}
+
+.sidebar {
+    width: 40vh;
+    min-height: 500vh;
+    background-color: #222121;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #333232;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+
+.main-content {
+    width: 75%;
+    padding: 20px;
+    text-align: left;
+    margin-left: 40vh;
+    height: 100%;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar button {
+    height: 5vh;
+    border: 2px solid #0c0c0c;
+    background-color: #1A1A1A;;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #F8F9FA;
+    font-size: 26px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s;
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+.sidebar button:hover {
+    color: black;
+    background-color: #F8F9FA;
+    box-shadow: white 0 0px 15px;
+}
+  
+
+#old-notes-list button {
+    background-color: #1A1A1A;;
+    color: #F8F9FA;
+    border: 2px solid #0c0c0c;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 80%;
+    height: 4%;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#old-notes-list button:hover{
+    color: black;
+    background-color: #F8F9FA;
+    box-shadow: white 0 0px 15px;
+}
+
+#notetext {
+    background-color: white;
+    padding: 10px;
+
+    border: 1px solid black;
+    color: black;
+
+    white-space: pre-wrap;
+}
+
+#notename{
+    color: white;
+}
+
+.checklist{
+    margin-left: 40vh;
+}
+
+.checklist > p{
+    font-size: 59px;
+}
+
+#addchecklist{
+    width: 20vh;
+    height: 4vh;
+    font-size: 25px;
+    margin-left: 5vh;
+    margin-top: 1vh;
+}
+
+#delete{
+    width: 20vh;
+    height: 6vh;
+    margin-top: 6vh;
+}
+
+#checkadd, #imageadd, #reminderadd, #linkadd, #dark{
+    margin-left: 5vh;
+}
+
+.addedimage{
+    margin-left: 5px;
+}
+
+.content{
+    color: white;
+}
+
+#requirements {
+    color: gray;
+}
+
+ul {
+    color: #F8F9FA;
+}

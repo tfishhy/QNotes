@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-Notes - Notebook</title>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link id="style" rel="stylesheet" href="dark.css">
+</head>
+
+<body>
+    <header>
+        <a href="home.html"><img id="logo" src="QNotes.png" alt="QNotes"></a>
+        <div class="container">
+            <div>
+                <a href="login.html"><button id="headerbutton">Login</button></a>
+            </div>
+
+
+            <div>
+                <div class="dropdown" id="dropdown">
+                    <img class="dropbtn" src="eevee.png">
+                    <div class="dropdown-content">
+                        <a onclick="siteAccess(2)">Settings</a>
+                        <a onclick="logout()">Logout</a>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+    </header>
+
+    <div class="sidebar">
+        <h2>Notes</h2>
+        <button id="new-note-button" onclick="createNewNote()">New Note</button>
+        <div id="old-notes-list">
+            <!-- List of old notes will be displayed here -->
+        </div>
+    </div>
+
+
+    <div class="main-content">
+        <p id="notename">QNotes</p>
+        <div id="notes"> <!-- Notes will be displayed here --></div>
+    </div>
+
+    <hr>
+
+    <div class="checklist">
+          <table>
+            <tr>
+                <th>
+                    <h1 class="content">Checklist</h1>
+                </th>
+                <th>
+                    <button id="addchecklist" onclick="addCheck()">Add</button>
+                </th>
+            </tr>
+          </table>
+
+          <div id="checkadd"></div>
+    </div>
+
+    <hr>
+
+    <div class="checklist">
+        <table>
+          <tr>
+              <th>
+                  <h1 class="content">Image</h1>
+              </th>
+              <th>
+                  <button id="addchecklist" onclick="addImage()">Add</button>
+              </th>
+          </tr>
+        </table>
+        <div id="imageadd"></div>
+    </div>
+
+    <hr>
+
+    <div class="checklist">
+        <table>
+          <tr>
+              <th>
+                  <h1 class="content">Links</h1>
+              </th>
+              <th>
+                  <button id="addchecklist" onclick="AddLink()">Add</button>
+              </th>
+          </tr>
+        </table>
+
+        <div id="linkadd"></div>
+    </div>
+
+</body>
+
+<!-- <footer>
+    <a>by: <span>liam t, </span></a>
+</footer> -->
+
+</html>

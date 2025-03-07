@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> QNotes - Settings </title>
+  <script src="script.js"></script>
+  <link id="style" rel="stylesheet" type="text/css" href="dark.css" title="style">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+
+</head>
+
+<body>
+
+    <header>
+        <a href="home.html"><img id="logo" src="QNotes.png" alt="QNotes"></a>
+        <div class="container">
+            <div>
+                <a href="login.html"><button id="headerbutton">Login</button></a>
+            </div>
+
+
+            <div>
+                <div class="dropdown" id="dropdown">
+                    <img class="dropbtn" src="eevee.png">
+                    <div class="dropdown-content">
+                        <a onclick="siteAccess(2)">Settings</a>
+                        <a onclick="logout()">Logout</a>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+    </header>
+
+    
+    <div class="contentbox">
+        
+        <p id="title">Settings</p>
+        <br>
+        <hr>
+        <h1 class="content">Change Password</h1>
+        <table>
+            <tr>
+                <th>
+                    <p class="content">Current Password: </p>
+                </th>
+                <th>
+                    <input class="changepass" id="old" type="password">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <p class="content">New Password: </p>
+                </th>
+                <th>
+                    <input class="changepass" id="new" type="password">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <p class="content">Confirm Password: </p>
+                </th>
+                <th>
+                    <input class="changepass" id="new2" type="password">
+                </th>
+            </tr>
+        </table>
+        <br>
+        <button id="change" onclick="changePass()" type="button">Change</button>
+
+        <hr>
+        
+        <h1 class="content">Change Theme</h1>
+        <input onclick="changeTheme(1)" class="themes" type="radio" id="dark" name="theme" value="DARK">
+        <label for="dark">Dark</label>
+        <input onclick="changeTheme(2)" class="themes" type="radio" id="light" name="theme" value="LIGHT">
+        <label for="dark">Light</label>
+        <br><br>
+
+        <hr>
+
+        <h1 class="content">Change Font</h1>
+        <label class="content" for="fonts">Select a font:</label>
+        <select onchange="changeFont(this)" name="fonts" id="fonts">
+            <option value=0>-Click Here-</option>
+            <option value=1>System UI (default)</option>
+            <option value=2>Times New Roman</option>
+            <option value=3>Arial</option>
+        </select>
+
+    </div>
+        
+    
+</body>
+
+</html>

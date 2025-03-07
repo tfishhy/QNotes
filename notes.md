@@ -1,0 +1,1 @@
+- functionality for same name notes, needs to prompt for a rename
